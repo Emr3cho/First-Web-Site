@@ -1,0 +1,329 @@
+@import url('https://fonts.googleapis.com/css2?family=Festive&family=Montserrat+Alternates:wght@400;700&display=swap');
+
+/* Navigation bar styling */
+@import url(../Styles/navigation.css);
+
+
+body{
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-size: 16px
+}
+
+/* All navigation container styling */
+
+.navigation{
+    width: 100%;
+    height: 45vw;
+    background: url(../Images/PIC_ONE.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    top: 0;
+    padding: 20px 0px;
+    animation: slide 50s infinite;
+}
+
+/* Transistion images */
+
+@keyframes slide{
+    25%{
+        background: url(../Images/PIC_TWO.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    50%{
+        background: url(../Images/PIC_FOUR.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    75%{
+        background: url(../Images/PIC_THREE.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    100%{
+        background: url(../Images/PIC_ONE.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+}
+
+/* After images logo and name section */
+
+.logo-name{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+.logo-name i{
+    margin-top: 2.1vw;
+    padding-right: 2vw;
+    font-size: 6vw;
+}
+
+.logo-name img{
+    width: 30vw;
+}
+
+/* END OF NAVIGATION */
+
+
+/* START OF MAIN SECTION */
+
+.first-paragraph{
+    background-color: #A2ACBD;
+    color: white;
+}
+
+.first-paragraph h2{
+    
+    font-size: 3em;
+    padding-top: 35px;
+    text-align: center;
+    margin-top: 0;
+}
+
+.gallery{
+    background-color: #A2ACBD;
+}
+
+.first-paragraph p{
+    width: 45%;
+    margin: 0 auto;
+    font-size: 1.25vw;
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+.gallery .first-row{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 22vw;
+    margin-bottom: 1.2vw;
+    cursor: pointer;
+}
+
+.gallery .second-row{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 21.5vw;
+    cursor: pointer;
+    margin-bottom: 1.2vw;
+}
+
+.gallery .thirth-row{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 22vw;
+    cursor: pointer;
+    
+}
+
+.services{
+    height: 38vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    justify-content: space-evenly;
+}
+
+.card{
+    background-image: url(../Images/CARD_1.jpg);
+    display: grid;
+    grid-template-columns: 20vw;
+    grid-template-rows: 15vw 17vw;
+    grid-template-areas: "image" "text";
+    border-radius: 18px;
+    background: white;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.9);
+    text-align: center;
+}
+
+.card-image{
+    grid-area: image;
+    background: url(../Images/CARD_1.jpg);
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    background-size: cover;
+}
+
+#card-img-2{
+    grid-area: image;
+    background: url(../Images/CARD_2.jpg);
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    background-size: cover;
+}
+
+#card-img-3{
+    grid-area: image;
+    background: url(../Images/CARD_3.jpg);
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    background-size: cover;
+}
+
+#card-img-4{
+    grid-area: image;
+    background: url(../Images/CARD_4.jpg);
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    background-size: cover;
+}
+
+.card-text{
+    grid-area: text;
+    margin: 25px;
+    font-size: 1vw;
+}
+
+.card button{
+    font-size: 1vw;
+    width: 60%;
+    margin: 0 auto;
+    margin-bottom: 1vw;
+    padding: 0.5vw 1vw;
+    border-radius: 20px;
+    font-weight: bold;
+    background: transparent ;
+    border: 3px solid #0077c0;
+    color: #0077c0;
+    text-align: center;
+    font-size: 1vw;
+}
+
+.card button:hover{
+    background: #0077c0;
+    color: white;
+    box-shadow: 1px 1px 20px black; 
+}
+
+.card-text h3{
+    text-align: center;
+    text-transform: uppercase;
+}
+
+#our-offerings{
+    font-size: 5vw;
+    padding-top: 100px;
+    text-align: center;
+    margin-top: 0;
+}
+
+.more{
+    border: 3px solid #0077c0;
+    width: 91%;
+    margin: 0 auto;
+    display: block;
+    border-radius: 20px;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size: 1.3em;
+    padding: 0.3vw 0.8vw;  
+    margin-bottom: 100px;
+    color: #0077c0;
+}
+
+.more:hover{
+    background: #0077c0;
+    color: white;
+    box-shadow: 1px 1px 20px black; 
+}
+
+
+footer{
+    background-color: #0077c0;
+}
+
+.logo-name-footer{
+    display: inline block;
+}
+
+.logo-name-footer i{
+    color: black;
+    font-size: 4vw;
+    padding-bottom: 20px;
+}
+
+.logo-name-footer img{
+    width: 10vw;
+}
+
+.information{
+    color: white;
+    padding-top: 3vw;
+    text-align: center;
+    display: grid;
+    overflow: hidden;
+    grid-template-rows: 32vw;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-areas: "contact map email";
+
+}
+
+.contact{
+    grid-area: contact;
+}
+
+.map{
+    grid-area: map;
+    padding-top: 1vw;
+}
+
+.email{
+    grid-area: email;
+}
+
+.information article:nth-child(2) h3{
+    font-size: 2vw;
+    margin-bottom: 5px;
+}
+
+.information article:nth-child(2) p{
+    width: 87%;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    font-size: 1.1vw;
+}
+
+.contact h3{
+    margin-top: 50px;
+    font-size: 2vw;
+}
+
+.contact ul{
+    width: 100%;
+    margin: 0 auto;
+    margin: 0;
+} 
+
+.contact ul li{
+    display: flex;
+    margin: 2vw 0;
+} 
+
+.contact li p{
+    margin: 0;
+    font-size: 1vw;
+}
+
+.contact ul li i{
+    margin-right: 7px;
+} 
+
+iframe{
+    margin: auto 0;
+    width: 40vw;
+    height: 28.5vw;
+}
+
+
+
+

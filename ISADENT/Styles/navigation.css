@@ -1,0 +1,46 @@
+/* Navigation bar styling */
+
+nav{
+    left: 10%;
+    right: 10%;
+    background-color: #0077c0;
+    opacity: 0.75;
+    justify-content: space-between;
+    width: 75%;
+    margin: 0 auto;
+    margin-top: 2em;
+    border: 10px solid #0077c0;
+    border-radius: 8px;
+    position: fixed;
+}
+
+nav ul{
+    display: flex;
+    padding: 0;
+    margin: 0;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.nav-items{
+    padding: 0.8vw 0;
+}
+
+.nav-items a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 1.2em;
+    padding: 0.8vw 2.5vw;
+}
+
+.nav-items i{
+    margin-right: 7px;
+}
+
+.nav-items a:hover{
+    color: black;
+    background-color: white;
+    box-shadow: 0px 0px 10px black; 
+    border-radius: 50px;
+}
